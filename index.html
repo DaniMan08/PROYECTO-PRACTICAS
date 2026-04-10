@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- importamos esta fuente para los iconos -> Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>LOGO</h1>
+</header>
+
+<!-- barra lateral -->
+ <!--ESTAS CLASES NO PUEDEN SER CAMBIADAS PORQUE SON NATIVAS DE LA BIBLIOTECA DE ICONOS-->
+<aside class="barra-lateral">
+    <div class="icono activo"><i class="fas fa-home"></i></div>  
+    <div class="icono"><i class="fas fa-comment"></i></div>
+    <div class="icono"><i class="fas fa-user-plus"></i></div>
+    <div class="icono"><i class="fas fa-users"></i></div>
+    <div class="icono"><i class="fas fa-file-alt"></i></div>
+    <div class="icono"><i class="fas fa-cog"></i></div>
+</aside>
+
+<!-- contenido -->
+<main class="contenido">
+    <h2>Bienvenido</h2>
+
+    <div class="tarjetas-contenedor">
+        <div class="tarjeta">
+            <div class="circulo"></div>
+            <p>Mensajes enviados</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="circulo"></div>
+            <p>Grupos</p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="circulo"></div>
+            <p>Usuarios</p>
+        </div>
+    </div>
+</main>
+
+<!-- botón -->
+<button class="boton-flotante">
+    <i class="fas fa-plus"></i> <!--NO CAMBIAR ESTA CLASE PORQUE ES NATIVA-->
+</button>
+
+</body>
+</html>
