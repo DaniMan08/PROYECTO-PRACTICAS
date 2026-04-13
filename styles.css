@@ -1,0 +1,238 @@
+/* ESTILOS DE LOGIN */
+
+/* la base de todos los estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+/* LADO IZQUIERDO */
+.contenedor-izquierdo {
+    width: 50%;
+    background: url("fondo.jpg") no-repeat center center/cover; 
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,0,0,0.2), rgba(0,0,0,0.7));
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* TEXTO DE BIENVENIDA */
+.texto-bienvenida h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+/* LADO DERECHO */
+.contenedor-derecho {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+
+/* FORMULARIO */
+.formulario-login {
+    width: 70%;
+}
+
+.formulario-login h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* GRUPOS DE INPUT */
+.grupo-input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.grupo-input input {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.grupo-input input:focus {
+    border-bottom-color: #d32f2f;
+}
+
+.grupo-input label {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* BOTÓN */
+button {
+    width: 100%;
+    padding: 12px 0;
+    background: #d32f2f;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #b71c1c;
+}
+
+/* ESTILOS DEL INDEX */
+
+.cabecera {
+    width: 100%;
+    height: 60px;
+    background: #d32f2f; 
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.barra-lateral {
+    width: 70px;
+    background: #ffffff;
+    height: 100vh;
+    padding-top: 80px; /* para que no tape la cabecera */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ddd;
+}
+
+.icono {
+    font-size: 22px;
+    color: #555;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.icono:hover {
+    color: #d32f2f;
+}
+
+.icono.activo {
+    color: #d32f2f;
+}
+
+/* CONTENIDO PRINCIPAL */
+.contenido {
+    margin-left: 70px; /* espacio barra lateral */
+    padding-top: 100px; /* espacio cabecera */
+    text-align: center;
+}
+
+.contenido h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+/* TARJETAS */
+.tarjetas-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tarjeta {
+    width: 200px;
+    height: 180px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    transition: 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+}
+
+.circulo {
+    width: 60px;
+    height: 60px;
+    background: #d32f2f;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.tarjeta p {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* BOTÓN FLOTANTE */
+.boton-flotante {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #d32f2f;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.boton-flotante:hover {
+    background: #b71c1c;
+}
