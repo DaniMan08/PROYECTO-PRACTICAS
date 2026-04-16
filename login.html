@@ -23,16 +23,16 @@
 
     <!-- lado derecho -->
     <div class="contenedor-derecho">
-        <form class="formulario-login">
+        <form class="formulario-login" action="http://localhost/FFE_PRACTICAS/PROYECTO-PRACTICAS/Config/login_db.php" method="post">
             <h2>Inicio de sesión</h2>
 
             <div class="grupo-input">
-                <input type="text" required>
+                <input type="text" name="user" required>
                 <label>Usuario</label>
             </div>
 
             <div class="grupo-input">
-                <input type="password" required>
+                <input type="password" name="pass" required>
                 <label>Contraseña</label>
             </div>
 
