@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Historial</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- importamos la fuente de los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>LOGO</h1>
+</header>
+
+<!-- barra lateral -->
+<aside class="barra-lateral">
+    <div class="icono"><i class="fas fa-home"></i></div>
+    <div class="icono"><i class="fas fa-comment"></i></div>
+    <div class="icono"><i class="fas fa-user-plus"></i></div>
+    <div class="icono"><i class="fas fa-users"></i></div>
+    <div class="icono activo"><i class="fas fa-file-alt"></i></div>
+    <div class="icono"><i class="fas fa-cog"></i></div>
+</aside>
+
+<!-- contenido -->
+<main class="contenido">
+
+    <h2>Historial</h2>
+
+    <!-- barra superior -->
+    <div class="barra-superior">
+
+        <!-- buscador -->
+        <div class="buscador-grande">
+            <i class="fas fa-search"></i>
+            <input type="text" id="buscador" placeholder="Buscar mensajes...">
+        </div>
+
+        <!-- filtros -->
+        <div class="filtros">
+
+            <!-- por fecha -->
+            <div class="filtro-fecha-real">
+                <input type="date">
+                <input type="date">
+            </div>
+
+            <!-- por usuario -->
+            <select class="filtro-select">
+                <option>Todos los usuarios</option>
+                <option>Juan</option>
+                <option>Ana</option>
+            </select>
+
+            <!-- por tipo -->
+            <select class="filtro-select">
+                <option>Tipo de mensaje</option>
+                <option>Individual</option>
+                <option>Grupo</option>
+                <option>Colectivo</option>
+            </select>
+
+            <!-- por canal -->
+            <select class="filtro-select">
+                <option>Canal</option>
+                <option>Email</option>
+                <option>WhatsApp</option>
+            </select>
+
+            <!-- botón -->
+            <button class="boton-filtros">
+                Aplicar filtros<i class="fas fa-sliders-h"></i> <!--icono de filtros-->
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- listado del historial de mensajes -->
+    <div class="lista-historial-grande">
+
+        <div class="item-historial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, obcaecati sunt voluptate impedit quia voluptatibus. Ut, iste quis quidem itaque tempore maiores eveniet assumenda, expedita, inventore consectetur quos! Sequi, ipsa.</div>
+        <div class="item-historial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur non culpa, nam veniam minus cupiditate est esse libero molestias doloribus fugit eius blanditiis quidem? Sint quo cum accusantium distinctio nemo.</div>
+        <div class="item-historial">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quaerat impedit magnam consequuntur? Est fugit at quaerat qui distinctio tenetur ipsa pariatur, aliquam et adipisci dolores sequi fuga veniam! Deserunt.</div>
+        <div class="item-historial">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia molestias, nobis accusantium nulla recusandae, at aliquam neque optio quisquam harum eveniet architecto quam, doloribus necessitatibus ea suscipit pariatur cumque animi.</div>
+        <div class="item-historial">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, dolor voluptatibus sit non ea, optio ullam praesentium doloremque expedita fuga suscipit aspernatur pariatur doloribus molestiae inventore obcaecati similique a alias!</div>
+        <div class="item-historial">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, possimus molestiae laboriosam nulla dolorem ad nesciunt ullam doloribus numquam tempora alias veritatis, placeat eos at aperiam, a unde rem minus.</div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
+

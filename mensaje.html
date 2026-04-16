@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Nuevo mensaje</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- importamos fuente de iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>LOGO</h1>
+</header>
+
+<!-- barra lateral -->
+<aside class="barra-lateral">
+    <div class="icono"><i class="fas fa-home"></i></div>
+    <div class="icono activo"><i class="fas fa-comment"></i></div>
+    <div class="icono"><i class="fas fa-user-plus"></i></div>
+    <div class="icono"><i class="fas fa-users"></i></div>
+    <div class="icono"><i class="fas fa-file-alt"></i></div>
+    <div class="icono"><i class="fas fa-cog"></i></div>
+</aside>
+
+<!-- contenido -->
+<main class="contenido contenido-flex">
+
+    <!-- formulario -->
+    <section class="contenedor-formulario">
+        <h2>Nuevo mensaje</h2>
+
+        <!-- destinatario -->
+        <div class="bloque">
+            <h3><i class="fas fa-chevron-down"></i> Destinatario</h3>
+
+            <div class="caja-input">
+                <label>Selector usuario/grupo</label>
+                <select>
+                    <option>Seleccionar...</option>
+                    <option>Grupo 1</option>
+                    <option>Grupo 2</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- mensaje -->
+        <div class="bloque">
+            <h3><i class="fas fa-chevron-down"></i> Mensaje</h3>
+
+            <div class="caja-input">
+                <label>Asunto</label>
+                <input type="text">
+            </div>
+
+            <div class="caja-input">
+                <label>Texto</label>
+                <textarea></textarea>
+            </div>
+        </div>
+
+        <!-- canal -->
+        <div class="bloque">
+            <h3><i class="fas fa-chevron-down"></i> Canal de envío</h3>
+
+            <div class="caja-input">
+                <label>Canal</label>
+                <select>
+                    <option>Seleccionar ...</option>
+                    <option>Email</option>
+                    <option>WhatsApp</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="boton-enviar">Enviar</button>
+    </section>
+
+    <!-- historial -->
+    <aside class="historial">
+        <h3>Historial</h3>
+
+        <div class="buscador">
+            <i class="fas fa-search"></i>
+            <input type="text">
+        </div>
+
+        <div class="lista-historial">
+            <div class="item-historial">Lorem ipsum dolor sit amet...</div>
+            <div class="item-historial">Lorem ipsum dolor sit amet...</div>
+            <div class="item-historial">Lorem ipsum dolor sit amet...</div>
+            <div class="item-historial">Lorem ipsum dolor sit amet...</div>
+            <div class="item-historial">Lorem ipsum dolor sit amet...</div>
+        </div>
+    </aside>
+
+</main>
+
+</body>
+</html>
