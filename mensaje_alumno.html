@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>ESCUELA DE TEATRO</h1>
+</header>
+
+<!-- barra lateral -->
+<aside class="barra-lateral">
+    <a href="index.html" class="icono activo">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <a href="mensaje.html" class="icono">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <a href="login.php" class="icono">
+        <i class="fas fa-user-plus"></i>
+    </a>
+
+    <a href="#" class="icono"> <!--aún por completar-->
+        <i class="fas fa-users"></i>
+    </a>
+
+    <a href="historial.html" class="icono">
+        <i class="fas fa-file-alt"></i>
+    </a>
+
+    <a href="#" class="icono"> <!--aún por completar-->
+        <i class="fas fa-cog"></i>
+    </a>
+</aside>
+
+<!-- contenido principal -->
+<main class="contenido">
+
+    <h2>Mensajes</h2>
+
+    <div class="contenido-mensajes">
+
+        <!-- menú izquierdo -->
+        <nav class="menu-mensajes">
+
+            <a href="mensaje.html" class="opcion-menu">  <!--aquí el enlace debería ser una específico para alumno o eliminar esta sección directamente si no va a poner escribir mensajes-->
+                <i class="fa-solid fa-pen"></i>
+                <span>Nuevo mensaje</span> <!--si ya no vamos a tener mensajería interna no creo que esto sea necesario-->
+            </a>
+
+            <a href="historial.html" class="opcion-menu activo"> 
+                <i class="fa-solid fa-inbox"></i>
+                <span>Recibidos</span>
+            </a>
+
+            <a href="historial.html" class="opcion-menu">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Enviados</span>
+            </a>
+
+        </nav>
+
+        <!-- panel derecho -->
+        <div class="panel-mensajes">
+
+            <!-- barra superior -->
+            <div class="barra-superior">
+
+                <div class="buscador-grande">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar mensajes...">
+                </div>
+
+                <div class="filtro-fecha-inline">
+                    <input type="date">
+                    <input type="date">
+                </div>
+                
+                <div class="filtros-container">
+                    <button class="boton-filtros"
+                    onclick="document.querySelector('.panel-filtros').classList.toggle('activo')">
+                    Filtros <i class="fas fa-sliders-h"></i>
+                </button>
+
+                <!-- panel desplegable -->
+                 
+                <div class="panel-filtros">
+                    <!-- usuario -->
+                     
+                    <div class="filtro-grupo">
+                        <label>Usuario</label>
+                        <select class="filtro-select">
+                            <option>Todos los usuarios</option>
+                            <option>Juan</option>
+                            <option>Ana</option>
+                        </select>
+                    </div>
+
+                    <!-- tipo de mensaje -->
+                    <div class="filtro-grupo">
+                        <label>Tipo de mensaje</label>
+                        <select class="filtro-select">
+                            <option>Individual</option>
+                            <option>Grupo</option>
+                            <option>Colectivo</option>
+                        </select>
+                    </div>
+                    
+                    <!-- canal -->
+                    <div class="filtro-grupo">
+                        <label>Canal</label>
+                        <select class="filtro-select">
+                            <option>Email</option>
+                            <option>WhatsApp</option>
+                        </select>
+                    </div>
+                    
+                    <!-- botón aplicar -->
+                    <button class="boton-aplicar">
+                        Aplicar filtros 
+                    </button>
+                </div>
+            </div>
+        </div>
+
+            <!-- lista de mensajes -->
+            <div class="lista-mensajes">
+
+                <!-- mensaje -->
+                <div class="fila-mensaje">
+                    <div class="mensaje-izquierda">
+                        <input type="checkbox">
+
+                        <div class="avatar"></div>
+
+                        <div class="mensaje-texto">
+                            <span class="nombre">Juan</span>
+                            <span class="preview">Mensaje de prueba lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+
+                    <div class="mensaje-derecha">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>20 abr 2026, 4:28</span>
+                    </div>
+                </div>
+
+                <!-- duplicado de mensajes -->
+                <div class="fila-mensaje">
+                    <div class="mensaje-izquierda">
+                        <input type="checkbox">
+                        <div class="avatar"></div>
+                        <div class="mensaje-texto">
+                            <span class="nombre">Ana</span>
+                            <span class="preview">Mensaje de prueba lorem ipsum dolor sit amet</span>
+                        </div>
+                    </div>
+                    <div class="mensaje-derecha">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>19 abr 2026, 12:10</span>
+                    </div>
+                </div>
+
+                <div class="fila-mensaje">
+                    <div class="mensaje-izquierda">
+                        <input type="checkbox">
+                        <div class="avatar"></div>
+                        <div class="mensaje-texto">
+                            <span class="nombre">Carlos</span>
+                            <span class="preview">Mensaje de prueba lorem ipsum dolor sit amet.</span>
+                        </div>
+                    </div>
+                    <div class="mensaje-derecha">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>18 abr 2026, 09:45</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
