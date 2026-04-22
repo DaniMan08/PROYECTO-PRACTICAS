@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>ESCUELA DE TEATRO</h1>
+</header>
+
+<!-- barra lateral -->
+<aside class="barra-lateral">
+    <a href="index.html" class="icono activo">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <a href="mensaje.html" class="icono">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <a href="login.php" class="icono">
+        <i class="fas fa-user-plus"></i>
+    </a>
+
+    <a href="registro_usuario.html" class="icono">
+        <i class="fas fa-users"></i>
+    </a>
+
+    <a href="historial.html" class="icono">
+        <i class="fas fa-file-alt"></i>
+    </a>
+
+    <a href="#" class="icono"> <!--aún por completar-->
+        <i class="fas fa-cog"></i>
+    </a>
+</aside>
+
+<!-- contenido -->
+<main class="contenido">
+
+    <h2>Registrar Usuario</h2>
+
+    <div class="contenido-flex">
+
+        <!-- formulario -->
+        <div class="contenedor-formulario">
+
+            <form>
+
+                <!-- datos personales -->
+                <div class="bloque">
+                    <h3><i class="fas fa-user"></i> Datos personales</h3>
+
+                    <div class="caja-input">
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Nombre">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Apellidos</label>
+                        <input type="text" placeholder="Apellidos">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>DNI</label>
+                        <input type="text" placeholder="12345678A">
+                    </div>
+                </div>
+
+                <!-- datos de contacto -->
+                <div class="bloque">
+                    <h3><i class="fas fa-address-book"></i> Contacto</h3>
+
+                    <div class="caja-input">
+                        <label>Dirección</label>
+                        <input type="text" placeholder="Calle ...">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Correo electrónico</label>
+                        <input type="email" placeholder="correo@gmail.com">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Teléfono</label>
+                        <input type="tel" placeholder="600000000">
+                    </div>
+                </div>
+
+                <!-- datos académicos -->
+                <div class="bloque">
+                    <h3><i class="fas fa-graduation-cap"></i> Datos académicos</h3>
+
+                    <div class="caja-input">
+                        <label>Clase</label>
+                        <input type="text" placeholder="Ej: Interpretación">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Nivel</label>
+                        <select>
+                            <option>Seleccionar nivel</option>
+                            <option>Iniciación</option>
+                            <option>Intermedio</option>
+                            <option>Avanzado</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Grupo</label>
+                        <select>
+                            <option>Seleccionar grupo</option>
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- otras observaciones -->
+                <div class="bloque">
+                    <h3><i class="fas fa-info-circle"></i> Otros</h3>
+
+                    <div class="caja-input">
+                        <label>Observaciones</label>
+                        <textarea placeholder="Información adicional..."></textarea>
+                    </div>
+                </div>
+
+                <!-- botón -->
+                <button type="submit" class="boton-enviar">
+                    Registrar usuario
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
