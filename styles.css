@@ -416,7 +416,10 @@ button:hover {
     gap: 40px;
     padding-right: 30px;
 }
-
+/* CENTRA SOLO EL FORMULARIO DEL REGISTRO */
+.registro-flex {
+    justify-content: center;
+}
 /* FORMULARIO IZQUIERDO */
 .contenedor-formulario {
     width: 60%;
