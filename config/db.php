@@ -17,8 +17,7 @@
             PDO::ATTR_ERRMODE            => PDO::ERRMODE_EXCEPTION,
             PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         ]);
-
-        echo "Conexión correcta a la base de datos";
+       
 
     } catch (PDOException $e) {
         die("Error en la conexión: " . $e->getMessage());

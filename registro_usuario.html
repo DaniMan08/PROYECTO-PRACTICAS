@@ -45,106 +45,194 @@
 <!-- contenido -->
 <main class="contenido">
 
-    <h2>Registrar Usuario</h2>
+    <h2>Registrar Roles</h2>
 
     <div class="contenido-flex registro-flex">
 
         <!-- formulario -->
         <div class="contenedor-formulario">
 
-            <form>
-
-                <!-- datos personales -->
+            <!-- Formulario Alumnos -->
+            <form action="http://localhost/FFE_PRACTICAS/PROYECTO-PRACTICAS/php/guardar_alumno.php" method="POST">
+               
                 <div class="bloque">
-                    <h3><i class="fas fa-user"></i> Datos personales</h3>
+                    <h3><i class="fas fa-user"></i>Alumnos</h3>
 
+               <div class="caja-input">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="caja-input">
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" placeholder="Apellidos">
+                </div>
+
+                <div class="caja-input">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="usuario@dominio.com">
+                </div>
+
+                <div class="caja-input">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="91 222 22 22">
+                </div>
+
+                <div class="caja-input">
+                    <label>Fecha alta</label>
+                    <input type="date" name="fecha_alta">
+                </div>
+
+                <div class="caja-input">
+                    <label>Estado</label>
+                    <select name="estado">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                </div>
+
+                      <!-- botón -->
+                    <button type="submit" class="boton-enviar">
+                        Registrar alumno
+                    </button>
+
+                </div>
+            </form>
+
+             <!-- Formulario empleados -->
+             <form action="http://localhost/FFE_PRACTICAS/PROYECTO-PRACTICAS/php/guardar_empleado.php" method="POST">
+               
+                <div class="bloque">
+                    <h3><i class="fas fa-graduation-cap"></i>Empleados</h3>
+
+               <div class="caja-input">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="caja-input">
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" placeholder="Apellidos">
+                </div>
+
+                <div class="caja-input">
+                    <label>Rol</label>
+                    <select name="rol">
+                        <option value="administrador">Administrador</option>
+                        <option value="profesor">Profesor</option>
+                    </select>
+                </div>
+
+                <div class="caja-input">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="usuario@dominio.com">
+                </div>
+
+                <div class="caja-input">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="91 222 22 22">
+                </div>
+
+                <div class="caja-input">
+                    <label>Fecha alta</label>
+                    <input type="date" name="fecha_alta">
+                </div>
+
+                <div class="caja-input">
+                    <label>Estado</label>
+                    <select name="estado">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                </div>
+
+                    <!-- botón -->
+                    <button type="submit" class="boton-enviar">
+                        Registrar empleados
+                    </button>
+                </div>             
+
+            </form>
+
+            <!-- Formulario posibles alumnos -->
+            <form action="http://localhost/FFE_PRACTICAS/PROYECTO-PRACTICAS/php/guardar_posible_alumno.php" method="POST">
+               
+                <div class="bloque">
+
+                    <h3><i class="fas fa-address-book"></i>Posible alumnos</h3>
+                    
                     <div class="caja-input">
                         <label>Nombre</label>
-                        <input type="text" placeholder="Nombre">
+                        <input type="text" name="nombre" placeholder="Nombre">
                     </div>
 
                     <div class="caja-input">
                         <label>Apellidos</label>
-                        <input type="text" placeholder="Apellidos">
+                        <input type="text" name="apellidos" placeholder="Apellidos">
                     </div>
 
                     <div class="caja-input">
-                        <label>Fecha de nacimiento</label>
-                        <input type="date">
-                    </div>
-
-                    <div class="caja-input">
-                        <label>DNI</label>
-                        <input type="text" placeholder="12345678A">
-                    </div>
-                </div>
-
-                <!-- datos de contacto -->
-                <div class="bloque">
-                    <h3><i class="fas fa-address-book"></i> Contacto</h3>
-
-                    <div class="caja-input">
-                        <label>Dirección</label>
-                        <input type="text" placeholder="Calle ...">
-                    </div>
-
-                    <div class="caja-input">
-                        <label>Correo electrónico</label>
-                        <input type="email" placeholder="correo@gmail.com">
-                    </div>
-
-                    <div class="caja-input">
-                        <label>Teléfono</label>
-                        <input type="tel" placeholder="600000000">
-                    </div>
-                </div>
-
-                <!-- datos académicos -->
-                <div class="bloque">
-                    <h3><i class="fas fa-graduation-cap"></i> Datos académicos</h3>
-
-                    <div class="caja-input">
-                        <label>Clase</label>
-                        <input type="text" placeholder="Ej: Interpretación">
-                    </div>
-
-                    <div class="caja-input">
-                        <label>Nivel</label>
-                        <select>
-                            <option>Seleccionar nivel</option>
-                            <option>Iniciación</option>
-                            <option>Intermedio</option>
-                            <option>Avanzado</option>
+                        <label>Nivel de interés</label>
+                        <select name="nivel_interes">
+                            <option value="iniciacion">Iniciación</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="avanzado">Avanzado</option>
                         </select>
                     </div>
 
                     <div class="caja-input">
-                        <label>Grupo</label>
-                        <select>
-                            <option>Seleccionar grupo</option>
-                            <option>A</option>
-                            <option>B</option>
-                            <option>C</option>
-                        </select>
+                        <label>Fecha interés</label>
+                        <input type="date" name="fecha_interes">
                     </div>
-                </div>
-
-                <!-- otras observaciones -->
-                <div class="bloque">
-                    <h3><i class="fas fa-info-circle"></i> Otros</h3>
 
                     <div class="caja-input">
-                        <label>Observaciones</label>
-                        <textarea placeholder="Información adicional..."></textarea>
+                        <label>Tipo de interés</label>
+                        <select name="tipo_interes">
+                            <option value="no_insistir">No insistir</option>
+                            <option value="avisar_mas_adelante">Avisar mas adelante</option>
+                            <option value="intensivo">Intensivo</option>
+                            <option value="ya_no_vive_en_madrid">Ya no vive en Madrid</option>
+                        </select>
                     </div>
+
+                    <div class="caja-input">
+                        <label>Clase de prueba</label>
+                        <select name="clase_prueba">
+                            <option value="no">No realizada</option>
+                            <option value="si">Realizada</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Apuntado</label>
+                        <select name="apuntado">
+                            <option value="0">No</option>
+                            <option value="1">Sí</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Fecha apuntado</label>
+                        <input type="date" name="fecha_apuntado">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Horario apuntado</label>
+                        <input type="time" name="horario_apuntado">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Notas</label>
+                        <textarea name="notas" placeholder="Escribe observaciones sobre el alumno..."></textarea>
+                    </div>
+
+                      <!-- botón -->
+                    <button type="submit" class="boton-enviar">
+                        Registrar posible alumnos
+                    </button>
+
                 </div>
-
-                <!-- botón -->
-                <button type="submit" class="boton-enviar">
-                    Registrar usuario
-                </button>
-
-            </form>
+            </form>           
 
         </div>
 
