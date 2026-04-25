@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>ESCUELA DE TEATRO</h1>
+</header>
+
+<!-- barra lateral -->
+<aside class="barra-lateral">
+    <a href="index.html" class="icono activo">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <a href="mensaje.html" class="icono">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <a href="login.php" class="icono">
+        <i class="fas fa-user-plus"></i>
+    </a>
+
+    <a href="registro.html" class="icono">
+        <i class="fas fa-users"></i>
+    </a>
+
+    <a href="historial.html" class="icono">
+        <i class="fas fa-file-alt"></i>
+    </a>
+
+    <a href="#" class="icono"> <!--aún por completar-->
+        <i class="fas fa-cog"></i>
+    </a>
+</aside>
+
+<!-- contenido -->
+<main class="contenido">
+
+    <h2>Registrar Empleados</h2>
+
+    <div class="contenido-flex registro-flex">
+
+        <!-- formulario -->
+        <div class="contenedor-formulario">
+
+             <!-- Formulario empleados -->
+             <form action="http://localhost/FFE_PRACTICAS/PROYECTO-PRACTICAS/php/guardar_empleado.php" method="POST">
+               
+                <div class="bloque">
+                    <h3><i class="fas fa-graduation-cap"></i>Empleados</h3>
+
+               <div class="caja-input">
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="caja-input">
+                    <label>Apellidos</label>
+                    <input type="text" name="apellidos" placeholder="Apellidos">
+                </div>
+
+                <div class="caja-input">
+                    <label>Rol</label>
+                    <select name="rol">
+                        <option value="administrador">Administrador</option>
+                        <option value="profesor">Profesor</option>
+                    </select>
+                </div>
+
+                <div class="caja-input">
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="usuario@dominio.com">
+                </div>
+
+                <div class="caja-input">
+                    <label>Teléfono</label>
+                    <input type="tel" name="telefono" placeholder="91 222 22 22">
+                </div>
+
+                <div class="caja-input">
+                    <label>Fecha alta</label>
+                    <input type="date" name="fecha_alta">
+                </div>
+
+                <div class="caja-input">
+                    <label>Estado</label>
+                    <select name="estado">
+                        <option value="activo">Activo</option>
+                        <option value="inactivo">Inactivo</option>
+                    </select>
+                </div>
+
+                    <!-- botón -->
+                    <button type="submit" class="boton-enviar">
+                        Registrar empleados
+                    </button>
+                </div>             
+
+            </form>
+          
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

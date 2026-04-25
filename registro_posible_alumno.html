@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- cabecera -->
+<header class="cabecera">
+    <h1>ESCUELA DE TEATRO</h1>
+</header>
+
+<!-- barra lateral -->
+<aside class="barra-lateral">
+    <a href="index.html" class="icono activo">
+        <i class="fas fa-home"></i>
+    </a>
+
+    <a href="mensaje.html" class="icono">
+        <i class="fas fa-comment"></i>
+    </a>
+
+    <a href="login.php" class="icono">
+        <i class="fas fa-user-plus"></i>
+    </a>
+
+    <a href="registro.html" class="icono">
+        <i class="fas fa-users"></i>
+    </a>
+
+    <a href="historial.html" class="icono">
+        <i class="fas fa-file-alt"></i>
+    </a>
+
+    <a href="#" class="icono"> <!--aún por completar-->
+        <i class="fas fa-cog"></i>
+    </a>
+</aside>
+
+<!-- contenido -->
+<main class="contenido">
+
+    <h2>Registrar Posible Alumno</h2>
+
+    <div class="contenido-flex registro-flex">
+
+        <!-- formulario -->
+        <div class="contenedor-formulario">
+        
+            <!-- Formulario posibles alumnos -->
+            <form action="http://localhost/FFE_PRACTICAS/PROYECTO-PRACTICAS/php/guardar_posible_alumno.php" method="POST">
+               
+                <div class="bloque">
+
+                    <h3><i class="fas fa-address-book"></i>Posible alumnos</h3>
+                    
+                    <div class="caja-input">
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Apellidos</label>
+                        <input type="text" name="apellidos" placeholder="Apellidos">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Nivel de interés</label>
+                        <select name="nivel_interes">
+                            <option value="iniciacion">Iniciación</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="avanzado">Avanzado</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Fecha interés</label>
+                        <input type="date" name="fecha_interes">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Tipo de interés</label>
+                        <select name="tipo_interes">
+                            <option value="no_insistir">No insistir</option>
+                            <option value="avisar_mas_adelante">Avisar mas adelante</option>
+                            <option value="intensivo">Intensivo</option>
+                            <option value="ya_no_vive_en_madrid">Ya no vive en Madrid</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Clase de prueba</label>
+                        <select name="clase_prueba">
+                            <option value="no">No realizada</option>
+                            <option value="si">Realizada</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Apuntado</label>
+                        <select name="apuntado">
+                            <option value="0">No</option>
+                            <option value="1">Sí</option>
+                        </select>
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Fecha apuntado</label>
+                        <input type="date" name="fecha_apuntado">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Horario apuntado</label>
+                        <input type="time" name="horario_apuntado">
+                    </div>
+
+                    <div class="caja-input">
+                        <label>Notas</label>
+                        <textarea name="notas" placeholder="Escribe observaciones sobre el alumno..."></textarea>
+                    </div>
+
+                      <!-- botón -->
+                    <button type="submit" class="boton-enviar">
+                        Registrar posible alumnos
+                    </button>
+
+                </div>
+            </form>           
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>
