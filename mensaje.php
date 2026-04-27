@@ -20,7 +20,7 @@
 <aside class="barra-lateral">
     <a href="index.html" class="icono activo"><i class="fas fa-home"></i></a>
     <a href="mensajeria.html" class="icono"><i class="fas fa-comment"></i></a>
-    <a href="login.html" class="icono"><i class="fas fa-user-plus"></i></a>
+    <a href="login.php" class="icono"><i class="fas fa-user-plus"></i></a>
     <a href="registro.html" class="icono"><i class="fas fa-users"></i></a>
     <a href="historial.html" class="icono"><i class="fas fa-file-alt"></i></a>
     <a href="#" class="icono"><i class="fas fa-cog"></i></a>
