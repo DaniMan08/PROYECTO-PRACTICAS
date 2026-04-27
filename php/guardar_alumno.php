@@ -29,7 +29,7 @@ $stmt->execute([
 // 3. Mensaje + redirección
 echo "<script>
 alert('Alumno registrado correctamente ✔️');
-window.location.href = '../registro_usuario.html';
+window.location.href = '../registro_alumno.html';
 </script>";
 exit;
 

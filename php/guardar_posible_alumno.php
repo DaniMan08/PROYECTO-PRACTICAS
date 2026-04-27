@@ -14,12 +14,13 @@ $apuntado = $_POST['apuntado'];
 $fecha_apuntado = $_POST['fecha_apuntado'];
 $horario_apuntado = $_POST['horario_apuntado'];
 $notas = $_POST['notas'];
+$email = $_POST['email']; // ✔ lo tienes, así que lo usamos
 
 // 2. Insert en la base de datos
 $sql = "INSERT INTO posibles_alumnos 
-(nombre, apellidos, nivel_interes, fecha_interes, tipo_interes, clase_prueba, apuntado, fecha_apuntado, horario_apuntado, notas)
+(nombre, apellidos, nivel_interes, fecha_interes, tipo_interes, clase_prueba, apuntado, fecha_apuntado, horario_apuntado, notas, email)
 VALUES 
-(:nombre, :apellidos, :nivel_interes, :fecha_interes, :tipo_interes, :clase_prueba, :apuntado, :fecha_apuntado, :horario_apuntado, :notas)";
+(:nombre, :apellidos, :nivel_interes, :fecha_interes, :tipo_interes, :clase_prueba, :apuntado, :fecha_apuntado, :horario_apuntado, :notas, :email)";
 
 $stmt = $pdo->prepare($sql);
 
@@ -33,14 +34,14 @@ $stmt->execute([
     ':apuntado' => $apuntado,
     ':fecha_apuntado' => $fecha_apuntado,
     ':horario_apuntado' => $horario_apuntado,
-    ':notas' => $notas
+    ':notas' => $notas,
+    ':email' => $email   // ✔ ESTE FALTABA
 ]);
 
- // 3. Mensaje + redirección
-    echo "<script>
-    alert('Posible alumno registrado correctamente ✔️');
-    window.location.href = '../registro_usuario.html';
-    </script>";
-    exit;
-
+// 3. Mensaje + redirección
+echo "<script>
+alert('Posible alumno registrado correctamente ✔️');
+window.location.href = '../registro_posible_alumno.html';
+</script>";
+exit;
 ?>

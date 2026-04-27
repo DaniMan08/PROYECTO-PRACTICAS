@@ -31,7 +31,7 @@
     // 3. Mensaje + redirección
     echo "<script>
     alert('Empleado registrado correctamente ✔️');
-    window.location.href = '../registro_usuario.html';
+    window.location.href = '../registro_profesor.html';
     </script>";
     exit;
 ?>
